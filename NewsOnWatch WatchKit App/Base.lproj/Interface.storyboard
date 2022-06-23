@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--手錶新聞-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="手錶新聞" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NewsOnWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="nlZ-sq-GDz">
+                            <items>
+                                <tableRow identifier="FeedRow" id="DYe-EM-zwx" customClass="FeedRow" customModule="NewsOnWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" spacing="4" id="cV0-vc-YqS">
+                                        <items>
+                                            <group width="2" height="29" alignment="left" verticalAlignment="center" id="lPT-hb-ogm">
+                                                <color key="backgroundColor" red="0.92549019610000005" green="0.035294117649999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                            <label alignment="left" verticalAlignment="center" text="下載中" minimumScaleFactor="0.30000000000000016" id="KOd-1r-dE5">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="KOd-1r-dE5" id="t01-OW-Mob"/>
+                                        <segue destination="Xak-Yv-diY" kind="push" identifier="GoToStory" id="VQx-Xh-Sek"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="nlZ-sq-GDz" id="ySb-sj-V3h"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Story Controller-->
+        <scene sceneID="9Yz-73-X2u">
+            <objects>
+                <controller id="Xak-Yv-diY" customClass="StoryController" customModule="NewsOnWatch_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="IB1-p5-w8D">
+                            <items>
+                                <tableRow identifier="ContentRow" id="oLq-Ky-zeh" customClass="ContentRow" customModule="NewsOnWatch_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="6" id="I1B-4s-YvB">
+                                        <items>
+                                            <group width="1" alignment="left" spacing="3" id="rNr-qA-2iZ">
+                                                <items>
+                                                    <group width="2" height="1" alignment="left" id="u0T-3o-A3k">
+                                                        <color key="backgroundColor" red="0.92549019610000005" green="0.035294117649999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </group>
+                                                    <label alignment="left" text="下載中" numberOfLines="10" id="WtJ-z6-sOd">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" text="--" numberOfLines="3" id="d98-cq-9VV">
+                                                <fontDescription key="font" type="system" weight="thin" pointSize="11"/>
+                                            </label>
+                                            <label alignment="left" text="--" numberOfLines="50" id="Nrh-gh-Icv">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="1" right="0.0" top="6" bottom="8"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="contentLabel" destination="Nrh-gh-Icv" id="7dI-bv-6an"/>
+                                        <outlet property="dateTimeLabel" destination="d98-cq-9VV" id="6ro-dN-SS0"/>
+                                        <outlet property="headerLabel" destination="WtJ-z6-sOd" id="AgJ-jm-Jud"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="OVl-cB-LhQ">
+                        <items>
+                            <menuItem title="Refresh" icon="resume" id="qWN-SJ-7bz">
+                                <connections>
+                                    <action selector="didMenuRefresh" destination="Xak-Yv-diY" id="Na6-uH-PRQ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="tableView" destination="IB1-p5-w8D" id="vJa-sd-6Zu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="398" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="NewsOnWatch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" layout="vertical" id="gv7-I2-MZq">
+                            <items>
+                                <group width="1" alignment="left" id="LIh-gM-zsd">
+                                    <items>
+                                        <imageView width="23" height="23" alignment="left" image="RoundPink.png" id="Wlb-hI-79M"/>
+                                        <label alignment="left" verticalAlignment="center" text="最近已讀新聞" id="O10-tF-D0N">
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="--" textAlignment="left" numberOfLines="2" minimumScaleFactor="0.60000000000000009" id="LXA-hy-VmG">
+                                    <color key="textColor" red="0.92549019610000005" green="0.035294117649999998" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="eew-Gs-W6Y">
+                            <items>
+                                <label alignment="left" text="沒有新聞" textAlignment="left" numberOfLines="3" id="HJ6-JC-uKZ">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="-" textAlignment="left" numberOfLines="2" id="i0O-ei-kFL">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                                <label alignment="left" text="-" textAlignment="left" numberOfLines="2" id="JSE-HF-mTy">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="1" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="glanceFeedNameLabel" destination="LXA-hy-VmG" id="6QM-VE-wJi"/>
+                        <outlet property="glanceTitleLabel" destination="HJ6-JC-uKZ" id="CMI-QR-zwC"/>
+                        <outlet property="glanceTitleLabel2" destination="i0O-ei-kFL" id="hmV-sa-M2F"/>
+                        <outlet property="glanceTitleLabel3" destination="JSE-HF-mTy" id="Noq-9b-0Go"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.92549019607843142" green="0.035294117647058823" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+</document>

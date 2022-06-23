@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BAED8CF1B1E916A00409F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAED8CE1B1E916A00409F10 /* AppDelegate.swift */; };
+		8BAED8D11B1E916A00409F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAED8D01B1E916A00409F10 /* ViewController.swift */; };
+		8BAED8D41B1E916A00409F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BAED8D21B1E916A00409F10 /* Main.storyboard */; };
+		8BAED8D61B1E916A00409F10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAED8D51B1E916A00409F10 /* Images.xcassets */; };
+		8BAED8D91B1E916A00409F10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAED8D71B1E916A00409F10 /* LaunchScreen.xib */; };
+		8BAED8E51B1E916A00409F10 /* NewsOnWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAED8E41B1E916A00409F10 /* NewsOnWatchTests.swift */; };
+		8BAED8EF1B1E9DA200409F10 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAED8EE1B1E9DA200409F10 /* SettingTableViewCell.swift */; };
+		C300EE811CB0578100AA73C8 /* RoundPink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C300EE801CB0578100AA73C8 /* RoundPink@2x.png */; };
+		C34145C01B2D79ED00F16909 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145AC1B2D79EC00F16909 /* Icon-60.png */; };
+		C34145C11B2D79ED00F16909 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145AD1B2D79EC00F16909 /* Icon-60@2x.png */; };
+		C34145C21B2D79ED00F16909 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145AE1B2D79EC00F16909 /* Icon-60@3x.png */; };
+		C34145C31B2D79ED00F16909 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145AF1B2D79EC00F16909 /* Icon-72.png */; };
+		C34145C41B2D79ED00F16909 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B01B2D79EC00F16909 /* Icon-72@2x.png */; };
+		C34145C51B2D79ED00F16909 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B11B2D79EC00F16909 /* Icon-76.png */; };
+		C34145C61B2D79ED00F16909 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B21B2D79EC00F16909 /* Icon-76@2x.png */; };
+		C34145C71B2D79ED00F16909 /* Icon-76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B31B2D79EC00F16909 /* Icon-76@3x.png */; };
+		C34145C81B2D79ED00F16909 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B41B2D79EC00F16909 /* Icon-Small-50.png */; };
+		C34145C91B2D79ED00F16909 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B51B2D79EC00F16909 /* Icon-Small-50@2x.png */; };
+		C34145CA1B2D79ED00F16909 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B61B2D79EC00F16909 /* Icon-Small.png */; };
+		C34145CB1B2D79ED00F16909 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B71B2D79EC00F16909 /* Icon-Small@2x.png */; };
+		C34145CC1B2D79ED00F16909 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B81B2D79EC00F16909 /* Icon-Small@3x.png */; };
+		C34145CD1B2D79ED00F16909 /* Icon-Spotlight-40.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145B91B2D79EC00F16909 /* Icon-Spotlight-40.png */; };
+		C34145CE1B2D79ED00F16909 /* Icon-Spotlight-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145BA1B2D79EC00F16909 /* Icon-Spotlight-40@2x.png */; };
+		C34145CF1B2D79ED00F16909 /* Icon-Spotlight-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145BB1B2D79EC00F16909 /* Icon-Spotlight-40@3x.png */; };
+		C34145D01B2D79ED00F16909 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145BC1B2D79EC00F16909 /* Icon.png */; };
+		C34145D11B2D79ED00F16909 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145BD1B2D79EC00F16909 /* Icon@2x.png */; };
+		C34145D21B2D79ED00F16909 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = C34145BE1B2D79ED00F16909 /* iTunesArtwork */; };
+		C34145D31B2D79ED00F16909 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = C34145BF1B2D79ED00F16909 /* iTunesArtwork@2x */; };
+		C34145D51B2D7D8400F16909 /* Icon_Rounded.png in Resources */ = {isa = PBXBuildFile; fileRef = C34145D41B2D7D8400F16909 /* Icon_Rounded.png */; };
+		C34CBE221B47EF4900763AB0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBE211B47EF4900763AB0 /* DetailsViewController.swift */; };
+		C34CBE241B49505500763AB0 /* InAppWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBE231B49505500763AB0 /* InAppWebViewController.swift */; };
+		C3DC09871CA6DEC2004875AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DC09851CA6DEC2004875AC /* Interface.storyboard */; };
+		C3DC09891CA6DEC2004875AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DC09881CA6DEC2004875AC /* Assets.xcassets */; };
+		C3DC09901CA6DEC3004875AC /* NewsOnWatches Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3DC098F1CA6DEC3004875AC /* NewsOnWatches Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3DC09951CA6DEC3004875AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09941CA6DEC3004875AC /* InterfaceController.swift */; };
+		C3DC09971CA6DEC3004875AC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09961CA6DEC3004875AC /* ExtensionDelegate.swift */; };
+		C3DC09991CA6DEC3004875AC /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09981CA6DEC3004875AC /* GlanceController.swift */; };
+		C3DC099B1CA6DEC3004875AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DC099A1CA6DEC3004875AC /* Assets.xcassets */; };
+		C3DC099F1CA6DEC3004875AC /* NewsOnWatches.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C3DC09831CA6DEC2004875AC /* NewsOnWatches.app */; };
+		C3DC09AB1CA6E33B004875AC /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09A71CA6E33B004875AC /* ContentManager.swift */; };
+		C3DC09AC1CA6E33B004875AC /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09A81CA6E33B004875AC /* ContentRow.swift */; };
+		C3DC09AD1CA6E33B004875AC /* FeedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09A91CA6E33B004875AC /* FeedRow.swift */; };
+		C3DC09AE1CA6E33B004875AC /* StoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DC09AA1CA6E33B004875AC /* StoryController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BAED8DF1B1E916A00409F10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAED8C11B1E916A00409F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BAED8C81B1E916A00409F10;
+			remoteInfo = NewsOnWatch;
+		};
+		C3DC09911CA6DEC3004875AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAED8C11B1E916A00409F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DC098E1CA6DEC3004875AC;
+			remoteInfo = "NewsOnWatches Extension";
+		};
+		C3DC099D1CA6DEC3004875AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BAED8C11B1E916A00409F10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DC09821CA6DEC2004875AC;
+			remoteInfo = NewsOnWatches;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BD191021B21551800223148 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC09801CA6DE5E004875AC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C3DC099F1CA6DEC3004875AC /* NewsOnWatches.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC09A31CA6DEC3004875AC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3DC09901CA6DEC3004875AC /* NewsOnWatches Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B591DE51B21783400792B06 /* FeedRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
+		8B591DE71B2181BF00792B06 /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
+		8B591DE91B254ED900792B06 /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		8BAED8C91B1E916A00409F10 /* NewsOnWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsOnWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAED8CD1B1E916A00409F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAED8CE1B1E916A00409F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BAED8D01B1E916A00409F10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BAED8D31B1E916A00409F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BAED8D51B1E916A00409F10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BAED8D81B1E916A00409F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8BAED8DE1B1E916A00409F10 /* NewsOnWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsOnWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BAED8E31B1E916A00409F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BAED8E41B1E916A00409F10 /* NewsOnWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsOnWatchTests.swift; sourceTree = "<group>"; };
+		8BAED8EE1B1E9DA200409F10 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		8BAFE94A1B2699E9009C62FB /* ContentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
+		8BD190E41B21551800223148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD190E51B21551800223148 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8BD190E71B21551800223148 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		8BD190E91B21551800223148 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8BD190F31B21551800223148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD190F51B21551800223148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8BD190F71B21551800223148 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C300EE801CB0578100AA73C8 /* RoundPink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RoundPink@2x.png"; sourceTree = "<group>"; };
+		C34145AC1B2D79EC00F16909 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		C34145AD1B2D79EC00F16909 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		C34145AE1B2D79EC00F16909 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		C34145AF1B2D79EC00F16909 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		C34145B01B2D79EC00F16909 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		C34145B11B2D79EC00F16909 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		C34145B21B2D79EC00F16909 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		C34145B31B2D79EC00F16909 /* Icon-76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@3x.png"; sourceTree = "<group>"; };
+		C34145B41B2D79EC00F16909 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		C34145B51B2D79EC00F16909 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		C34145B61B2D79EC00F16909 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		C34145B71B2D79EC00F16909 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		C34145B81B2D79EC00F16909 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		C34145B91B2D79EC00F16909 /* Icon-Spotlight-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40.png"; sourceTree = "<group>"; };
+		C34145BA1B2D79EC00F16909 /* Icon-Spotlight-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@2x.png"; sourceTree = "<group>"; };
+		C34145BB1B2D79EC00F16909 /* Icon-Spotlight-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-40@3x.png"; sourceTree = "<group>"; };
+		C34145BC1B2D79EC00F16909 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		C34145BD1B2D79EC00F16909 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		C34145BE1B2D79ED00F16909 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		C34145BF1B2D79ED00F16909 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		C34145D41B2D7D8400F16909 /* Icon_Rounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Rounded.png; sourceTree = "<group>"; };
+		C34145DF1B2D9DB700F16909 /* 24x24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "24x24@2x.png"; sourceTree = "<group>"; };
+		C34145E01B2D9DB700F16909 /* 27.5x27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "27.5x27.5@2x.png"; sourceTree = "<group>"; };
+		C34145E11B2D9DB700F16909 /* 29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@2x.png"; sourceTree = "<group>"; };
+		C34145E21B2D9DB700F16909 /* 29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29x29@3x.png"; sourceTree = "<group>"; };
+		C34145E31B2D9DB700F16909 /* 40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40x40@2x.png"; sourceTree = "<group>"; };
+		C34145E41B2D9DB700F16909 /* 44x44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "44x44@2x.png"; sourceTree = "<group>"; };
+		C34145E51B2D9DB700F16909 /* 86x86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "86x86@2x.png"; sourceTree = "<group>"; };
+		C34145E61B2D9DB700F16909 /* 98x98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "98x98@2x.png"; sourceTree = "<group>"; };
+		C34CBE211B47EF4900763AB0 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C34CBE231B49505500763AB0 /* InAppWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppWebViewController.swift; sourceTree = "<group>"; };
+		C34CBE251B4C25AF00763AB0 /* RoundPink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RoundPink@2x.png"; sourceTree = "<group>"; };
+		C3DC09831CA6DEC2004875AC /* NewsOnWatches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsOnWatches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DC09861CA6DEC2004875AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C3DC09881CA6DEC2004875AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3DC098A1CA6DEC2004875AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DC098F1CA6DEC3004875AC /* NewsOnWatches Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NewsOnWatches Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DC09941CA6DEC3004875AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C3DC09961CA6DEC3004875AC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C3DC09981CA6DEC3004875AC /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		C3DC099A1CA6DEC3004875AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3DC099C1CA6DEC3004875AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DC09A71CA6E33B004875AC /* ContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		C3DC09A81CA6E33B004875AC /* ContentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
+		C3DC09A91CA6E33B004875AC /* FeedRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
+		C3DC09AA1CA6E33B004875AC /* StoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BAED8C61B1E916A00409F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAED8DB1B1E916A00409F10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC098C1CA6DEC3004875AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BAED8C01B1E916A00409F10 = {
+			isa = PBXGroup;
+			children = (
+				8BAED8CB1B1E916A00409F10 /* NewsOnWatch */,
+				8BAED8E11B1E916A00409F10 /* NewsOnWatchTests */,
+				8BD190E21B21551800223148 /* NewsOnWatch WatchKit Extension */,
+				8BD190F11B21551800223148 /* NewsOnWatch WatchKit App */,
+				C3DC09841CA6DEC2004875AC /* NewsOnWatches */,
+				C3DC09931CA6DEC3004875AC /* NewsOnWatches Extension */,
+				8BAED8CA1B1E916A00409F10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BAED8CA1B1E916A00409F10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BAED8C91B1E916A00409F10 /* NewsOnWatch.app */,
+				8BAED8DE1B1E916A00409F10 /* NewsOnWatchTests.xctest */,
+				C3DC09831CA6DEC2004875AC /* NewsOnWatches.app */,
+				C3DC098F1CA6DEC3004875AC /* NewsOnWatches Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BAED8CB1B1E916A00409F10 /* NewsOnWatch */ = {
+			isa = PBXGroup;
+			children = (
+				8BAED8CE1B1E916A00409F10 /* AppDelegate.swift */,
+				8BAED8D01B1E916A00409F10 /* ViewController.swift */,
+				8BAED8EE1B1E9DA200409F10 /* SettingTableViewCell.swift */,
+				C34CBE211B47EF4900763AB0 /* DetailsViewController.swift */,
+				C34CBE231B49505500763AB0 /* InAppWebViewController.swift */,
+				8BAED8D21B1E916A00409F10 /* Main.storyboard */,
+				8BAED8D51B1E916A00409F10 /* Images.xcassets */,
+				C34145AB1B2D79EC00F16909 /* iOS Icons */,
+				8BAED8D71B1E916A00409F10 /* LaunchScreen.xib */,
+				8BAED8CC1B1E916A00409F10 /* Supporting Files */,
+			);
+			path = NewsOnWatch;
+			sourceTree = "<group>";
+		};
+		8BAED8CC1B1E916A00409F10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAED8CD1B1E916A00409F10 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BAED8E11B1E916A00409F10 /* NewsOnWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BAED8E41B1E916A00409F10 /* NewsOnWatchTests.swift */,
+				8BAED8E21B1E916A00409F10 /* Supporting Files */,
+			);
+			path = NewsOnWatchTests;
+			sourceTree = "<group>";
+		};
+		8BAED8E21B1E916A00409F10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BAED8E31B1E916A00409F10 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BD190E21B21551800223148 /* NewsOnWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8BD190E51B21551800223148 /* InterfaceController.swift */,
+				8B591DE51B21783400792B06 /* FeedRow.swift */,
+				8B591DE71B2181BF00792B06 /* StoryController.swift */,
+				8BAFE94A1B2699E9009C62FB /* ContentRow.swift */,
+				8BD190E71B21551800223148 /* GlanceController.swift */,
+				8B591DE91B254ED900792B06 /* ContentManager.swift */,
+				8BD190E91B21551800223148 /* Images.xcassets */,
+				8BD190E31B21551800223148 /* Supporting Files */,
+			);
+			path = "NewsOnWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8BD190E31B21551800223148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BD190E41B21551800223148 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BD190F11B21551800223148 /* NewsOnWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8BD190F41B21551800223148 /* Interface.storyboard */,
+				8BD190F71B21551800223148 /* Images.xcassets */,
+				C34CBE251B4C25AF00763AB0 /* RoundPink@2x.png */,
+				C34145DE1B2D9DB700F16909 /* watchOS Icons */,
+				C34145D91B2D940800F16909 /* Images */,
+				8BD190F21B21551800223148 /* Supporting Files */,
+			);
+			path = "NewsOnWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		8BD190F21B21551800223148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BD190F31B21551800223148 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C34145AB1B2D79EC00F16909 /* iOS Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C34145D41B2D7D8400F16909 /* Icon_Rounded.png */,
+				C34145AC1B2D79EC00F16909 /* Icon-60.png */,
+				C34145AD1B2D79EC00F16909 /* Icon-60@2x.png */,
+				C34145AE1B2D79EC00F16909 /* Icon-60@3x.png */,
+				C34145AF1B2D79EC00F16909 /* Icon-72.png */,
+				C34145B01B2D79EC00F16909 /* Icon-72@2x.png */,
+				C34145B11B2D79EC00F16909 /* Icon-76.png */,
+				C34145B21B2D79EC00F16909 /* Icon-76@2x.png */,
+				C34145B31B2D79EC00F16909 /* Icon-76@3x.png */,
+				C34145B41B2D79EC00F16909 /* Icon-Small-50.png */,
+				C34145B51B2D79EC00F16909 /* Icon-Small-50@2x.png */,
+				C34145B61B2D79EC00F16909 /* Icon-Small.png */,
+				C34145B71B2D79EC00F16909 /* Icon-Small@2x.png */,
+				C34145B81B2D79EC00F16909 /* Icon-Small@3x.png */,
+				C34145B91B2D79EC00F16909 /* Icon-Spotlight-40.png */,
+				C34145BA1B2D79EC00F16909 /* Icon-Spotlight-40@2x.png */,
+				C34145BB1B2D79EC00F16909 /* Icon-Spotlight-40@3x.png */,
+				C34145BC1B2D79EC00F16909 /* Icon.png */,
+				C34145BD1B2D79EC00F16909 /* Icon@2x.png */,
+				C34145BE1B2D79ED00F16909 /* iTunesArtwork */,
+				C34145BF1B2D79ED00F16909 /* iTunesArtwork@2x */,
+			);
+			path = "iOS Icons";
+			sourceTree = "<group>";
+		};
+		C34145D91B2D940800F16909 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C34145DE1B2D9DB700F16909 /* watchOS Icons */ = {
+			isa = PBXGroup;
+			children = (
+				C34145DF1B2D9DB700F16909 /* 24x24@2x.png */,
+				C34145E01B2D9DB700F16909 /* 27.5x27.5@2x.png */,
+				C34145E11B2D9DB700F16909 /* 29x29@2x.png */,
+				C34145E21B2D9DB700F16909 /* 29x29@3x.png */,
+				C34145E31B2D9DB700F16909 /* 40x40@2x.png */,
+				C34145E41B2D9DB700F16909 /* 44x44@2x.png */,
+				C34145E51B2D9DB700F16909 /* 86x86@2x.png */,
+				C34145E61B2D9DB700F16909 /* 98x98@2x.png */,
+			);
+			path = "watchOS Icons";
+			sourceTree = "<group>";
+		};
+		C3DC09841CA6DEC2004875AC /* NewsOnWatches */ = {
+			isa = PBXGroup;
+			children = (
+				C3DC09851CA6DEC2004875AC /* Interface.storyboard */,
+				C300EE801CB0578100AA73C8 /* RoundPink@2x.png */,
+				C3DC09881CA6DEC2004875AC /* Assets.xcassets */,
+				C3DC098A1CA6DEC2004875AC /* Info.plist */,
+			);
+			path = NewsOnWatches;
+			sourceTree = "<group>";
+		};
+		C3DC09931CA6DEC3004875AC /* NewsOnWatches Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C3DC09941CA6DEC3004875AC /* InterfaceController.swift */,
+				C3DC09961CA6DEC3004875AC /* ExtensionDelegate.swift */,
+				C3DC09A91CA6E33B004875AC /* FeedRow.swift */,
+				C3DC09AA1CA6E33B004875AC /* StoryController.swift */,
+				C3DC09A81CA6E33B004875AC /* ContentRow.swift */,
+				C3DC09981CA6DEC3004875AC /* GlanceController.swift */,
+				C3DC09A71CA6E33B004875AC /* ContentManager.swift */,
+				C3DC099A1CA6DEC3004875AC /* Assets.xcassets */,
+				C3DC099C1CA6DEC3004875AC /* Info.plist */,
+			);
+			path = "NewsOnWatches Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BAED8C81B1E916A00409F10 /* NewsOnWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAED8E81B1E916A00409F10 /* Build configuration list for PBXNativeTarget "NewsOnWatch" */;
+			buildPhases = (
+				8BAED8C51B1E916A00409F10 /* Sources */,
+				8BAED8C61B1E916A00409F10 /* Frameworks */,
+				8BAED8C71B1E916A00409F10 /* Resources */,
+				8BD191021B21551800223148 /* Embed App Extensions */,
+				C3DC09801CA6DE5E004875AC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3DC099E1CA6DEC3004875AC /* PBXTargetDependency */,
+			);
+			name = NewsOnWatch;
+			productName = NewsOnWatch;
+			productReference = 8BAED8C91B1E916A00409F10 /* NewsOnWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BAED8DD1B1E916A00409F10 /* NewsOnWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAED8EB1B1E916A00409F10 /* Build configuration list for PBXNativeTarget "NewsOnWatchTests" */;
+			buildPhases = (
+				8BAED8DA1B1E916A00409F10 /* Sources */,
+				8BAED8DB1B1E916A00409F10 /* Frameworks */,
+				8BAED8DC1B1E916A00409F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BAED8E01B1E916A00409F10 /* PBXTargetDependency */,
+			);
+			name = NewsOnWatchTests;
+			productName = NewsOnWatchTests;
+			productReference = 8BAED8DE1B1E916A00409F10 /* NewsOnWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3DC09821CA6DEC2004875AC /* NewsOnWatches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DC09A41CA6DEC3004875AC /* Build configuration list for PBXNativeTarget "NewsOnWatches" */;
+			buildPhases = (
+				C3DC09811CA6DEC2004875AC /* Resources */,
+				C3DC09A31CA6DEC3004875AC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3DC09921CA6DEC3004875AC /* PBXTargetDependency */,
+			);
+			name = NewsOnWatches;
+			productName = NewsOnWatches;
+			productReference = C3DC09831CA6DEC2004875AC /* NewsOnWatches.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C3DC098E1CA6DEC3004875AC /* NewsOnWatches Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DC09A01CA6DEC3004875AC /* Build configuration list for PBXNativeTarget "NewsOnWatches Extension" */;
+			buildPhases = (
+				C3DC098B1CA6DEC3004875AC /* Sources */,
+				C3DC098C1CA6DEC3004875AC /* Frameworks */,
+				C3DC098D1CA6DEC3004875AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NewsOnWatches Extension";
+			productName = "NewsOnWatches Extension";
+			productReference = C3DC098F1CA6DEC3004875AC /* NewsOnWatches Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BAED8C11B1E916A00409F10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "MetaCreate / Carl Chung";
+				TargetAttributes = {
+					8BAED8C81B1E916A00409F10 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RD3CFK5ED5;
+					};
+					8BAED8DD1B1E916A00409F10 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8BAED8C81B1E916A00409F10;
+					};
+					C3DC09821CA6DEC2004875AC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = RD3CFK5ED5;
+					};
+					C3DC098E1CA6DEC3004875AC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 8BAED8C41B1E916A00409F10 /* Build configuration list for PBXProject "NewsOnWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BAED8C01B1E916A00409F10;
+			productRefGroup = 8BAED8CA1B1E916A00409F10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BAED8C81B1E916A00409F10 /* NewsOnWatch */,
+				8BAED8DD1B1E916A00409F10 /* NewsOnWatchTests */,
+				C3DC09821CA6DEC2004875AC /* NewsOnWatches */,
+				C3DC098E1CA6DEC3004875AC /* NewsOnWatches Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BAED8C71B1E916A00409F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C34145C71B2D79ED00F16909 /* Icon-76@3x.png in Resources */,
+				C34145C21B2D79ED00F16909 /* Icon-60@3x.png in Resources */,
+				C34145CF1B2D79ED00F16909 /* Icon-Spotlight-40@3x.png in Resources */,
+				8BAED8D41B1E916A00409F10 /* Main.storyboard in Resources */,
+				C34145D51B2D7D8400F16909 /* Icon_Rounded.png in Resources */,
+				C34145CB1B2D79ED00F16909 /* Icon-Small@2x.png in Resources */,
+				C34145C41B2D79ED00F16909 /* Icon-72@2x.png in Resources */,
+				C34145C11B2D79ED00F16909 /* Icon-60@2x.png in Resources */,
+				8BAED8D91B1E916A00409F10 /* LaunchScreen.xib in Resources */,
+				C34145C01B2D79ED00F16909 /* Icon-60.png in Resources */,
+				C34145C31B2D79ED00F16909 /* Icon-72.png in Resources */,
+				C34145CA1B2D79ED00F16909 /* Icon-Small.png in Resources */,
+				C34145CE1B2D79ED00F16909 /* Icon-Spotlight-40@2x.png in Resources */,
+				C34145D01B2D79ED00F16909 /* Icon.png in Resources */,
+				8BAED8D61B1E916A00409F10 /* Images.xcassets in Resources */,
+				C34145C91B2D79ED00F16909 /* Icon-Small-50@2x.png in Resources */,
+				C34145C81B2D79ED00F16909 /* Icon-Small-50.png in Resources */,
+				C34145D31B2D79ED00F16909 /* iTunesArtwork@2x in Resources */,
+				C34145D11B2D79ED00F16909 /* Icon@2x.png in Resources */,
+				C34145D21B2D79ED00F16909 /* iTunesArtwork in Resources */,
+				C34145C61B2D79ED00F16909 /* Icon-76@2x.png in Resources */,
+				C34145CC1B2D79ED00F16909 /* Icon-Small@3x.png in Resources */,
+				C34145CD1B2D79ED00F16909 /* Icon-Spotlight-40.png in Resources */,
+				C34145C51B2D79ED00F16909 /* Icon-76.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAED8DC1B1E916A00409F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC09811CA6DEC2004875AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DC09891CA6DEC2004875AC /* Assets.xcassets in Resources */,
+				C300EE811CB0578100AA73C8 /* RoundPink@2x.png in Resources */,
+				C3DC09871CA6DEC2004875AC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC098D1CA6DEC3004875AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DC099B1CA6DEC3004875AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BAED8C51B1E916A00409F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAED8EF1B1E9DA200409F10 /* SettingTableViewCell.swift in Sources */,
+				8BAED8D11B1E916A00409F10 /* ViewController.swift in Sources */,
+				C34CBE241B49505500763AB0 /* InAppWebViewController.swift in Sources */,
+				8BAED8CF1B1E916A00409F10 /* AppDelegate.swift in Sources */,
+				C34CBE221B47EF4900763AB0 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BAED8DA1B1E916A00409F10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BAED8E51B1E916A00409F10 /* NewsOnWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DC098B1CA6DEC3004875AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DC09971CA6DEC3004875AC /* ExtensionDelegate.swift in Sources */,
+				C3DC09AB1CA6E33B004875AC /* ContentManager.swift in Sources */,
+				C3DC09AD1CA6E33B004875AC /* FeedRow.swift in Sources */,
+				C3DC09AE1CA6E33B004875AC /* StoryController.swift in Sources */,
+				C3DC09951CA6DEC3004875AC /* InterfaceController.swift in Sources */,
+				C3DC09AC1CA6E33B004875AC /* ContentRow.swift in Sources */,
+				C3DC09991CA6DEC3004875AC /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BAED8E01B1E916A00409F10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BAED8C81B1E916A00409F10 /* NewsOnWatch */;
+			targetProxy = 8BAED8DF1B1E916A00409F10 /* PBXContainerItemProxy */;
+		};
+		C3DC09921CA6DEC3004875AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3DC098E1CA6DEC3004875AC /* NewsOnWatches Extension */;
+			targetProxy = C3DC09911CA6DEC3004875AC /* PBXContainerItemProxy */;
+		};
+		C3DC099E1CA6DEC3004875AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3DC09821CA6DEC2004875AC /* NewsOnWatches */;
+			targetProxy = C3DC099D1CA6DEC3004875AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BAED8D21B1E916A00409F10 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAED8D31B1E916A00409F10 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BAED8D71B1E916A00409F10 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BAED8D81B1E916A00409F10 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8BD190F41B21551800223148 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BD190F51B21551800223148 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C3DC09851CA6DEC2004875AC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DC09861CA6DEC2004875AC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BAED8E61B1E916A00409F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BAED8E71B1E916A00409F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BAED8E91B1E916A00409F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carl Chung (9RE9826PD6)";
+				INFOPLIST_FILE = NewsOnWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = NewsOnWatch;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8BAED8EA1B1E916A00409F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Siu To Carl Chung (RD3CFK5ED5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Siu To Carl Chung (RD3CFK5ED5)";
+				INFOPLIST_FILE = NewsOnWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = NewsOnWatch;
+				PROVISIONING_PROFILE = "b8e2bc2b-a405-4bd9-88d5-dc545e06a284";
+			};
+			name = Release;
+		};
+		8BAED8EC1B1E916A00409F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewsOnWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsOnWatch.app/NewsOnWatch";
+			};
+			name = Debug;
+		};
+		8BAED8ED1B1E916A00409F10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewsOnWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsOnWatch.app/NewsOnWatch";
+			};
+			name = Release;
+		};
+		C3DC09A11CA6DEC3004875AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carl Chung (9RE9826PD6)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "NewsOnWatches Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metacreate.NewsOnWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		C3DC09A21CA6DEC3004875AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Siu To Carl Chung (RD3CFK5ED5)";
+				INFOPLIST_FILE = "NewsOnWatches Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.metacreate.NewsOnWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "20a1f94b-da53-44cc-9aae-7a88d6cf2096";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		C3DC09A51CA6DEC3004875AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Carl Chung (9RE9826PD6)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_TESTABILITY = YES;
+				IBSC_MODULE = NewsOnWatches_Extension;
+				INFOPLIST_FILE = NewsOnWatches/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metacreate.NewsOnWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		C3DC09A61CA6DEC3004875AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Siu To Carl Chung (RD3CFK5ED5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Siu To Carl Chung (RD3CFK5ED5)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = NewsOnWatches_Extension;
+				INFOPLIST_FILE = NewsOnWatches/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metacreate.NewsOnWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "500a56e5-78d7-4d6a-8a25-20a97df9ccdb";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BAED8C41B1E916A00409F10 /* Build configuration list for PBXProject "NewsOnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAED8E61B1E916A00409F10 /* Debug */,
+				8BAED8E71B1E916A00409F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAED8E81B1E916A00409F10 /* Build configuration list for PBXNativeTarget "NewsOnWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAED8E91B1E916A00409F10 /* Debug */,
+				8BAED8EA1B1E916A00409F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BAED8EB1B1E916A00409F10 /* Build configuration list for PBXNativeTarget "NewsOnWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BAED8EC1B1E916A00409F10 /* Debug */,
+				8BAED8ED1B1E916A00409F10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DC09A01CA6DEC3004875AC /* Build configuration list for PBXNativeTarget "NewsOnWatches Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DC09A11CA6DEC3004875AC /* Debug */,
+				C3DC09A21CA6DEC3004875AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DC09A41CA6DEC3004875AC /* Build configuration list for PBXNativeTarget "NewsOnWatches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DC09A51CA6DEC3004875AC /* Debug */,
+				C3DC09A61CA6DEC3004875AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BAED8C11B1E916A00409F10 /* Project object */;
+}
